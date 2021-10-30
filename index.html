@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <title>Dashboard</title>
+</head>
+
+<body class="has-background-light">
+    <!-- navbar -->
+
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            
+        
+            <a class="navbar-item" href="#">
+                <img src="assets/logoipsum-logo-35.svg" width="112" height="28" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <p class="panel-tabs">
+                        <a class="is-active">
+                            <span class="icon">
+                                <i class="far fa-lg fa-bell"></i>
+                            </span>
+                        </a>
+                        <a>
+                            <span class="tag is-rounded"> Akul Chhillar </span>
+                        </a>
+                        <a>
+                            <span class="icon">
+                                <i class="fas fa-lg fa-cog"></i>
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <!-- mainbody -->
+
+    <div class="columns mt-2 mr-2">
+
+        <!-- sidebar -->
+
+        <aside class="column is-2 is-hidden-mobile">
+
+       
+
+            <div class="menu box ml-2">
+
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-item has-background-grey-lighter"><i class="fas fa-columns"></i> <span
+                                class="has-text-weight-semibold"> Dashboard </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-boxes"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Inventory </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-shopping-cart"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Purchase </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-undo-alt"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Supplier's Return </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-file-invoice"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Invoice </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-dollar-sign"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Sales </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-receipt"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Bill </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-users"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Customers </span></a></li>
+                    <li><a href="#" class="menu-item"><i class="fas fa-parachute-box"></i> <span
+                                class="has-text-grey has-text-weight-normal"> Suppliers </span></a></li>
+
+                </ul>
+
+
+
+
+            </div>
+
+
+        </aside>
+
+        <!-- sidebar -->
+
+        <!-- dashboard -->
+
+        <div class="column">
+
+            <!-- heading-bar -->
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child has-background-white box">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <h1 class="title is-5">
+                                        <i class="fas fa-columns"></i>
+                                        Dashboard
+                                    </h1>
+                                </div>
+                            </div>
+
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <div class="field is-grouped">
+                                        <p class="control">
+                                            <button class="button">
+                                                Month to date
+                                            </button>
+                                        </p>
+
+                                        <p class="control">
+                                            <button class="button">
+                                                Year to date
+                                            </button>
+                                        </p>
+
+                                        <p class="control">
+                                            <button class="button is-success">
+                                                <span>Export</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-file-download"></i> </span>
+
+                                            </button>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading-bar -->
+
+
+            <!-- first-row -->
+
+            <div class="tile is-ancestor">
+                <!-- card1 -->
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <h1 class="title is-6">Sales</h1>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <nav class="level">
+                                <div class="level-item has-text-centered">
+                                    
+                                    <div class="columns">
+                                        <div class="column is-6 m-0">
+                                        <figure class="image is-64x64">
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/summer-sales.png"/>
+                                          </figure>
+                                        </div>
+                                        <div class="column m-0">
+                                        <p class="heading">Total Sales</p>
+                                        <p class="title is-4 has-text-weight-bold">786</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <div class="columns">
+                                        <div class="column is-6">
+                                        <figure class="image is-64x64">
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/sales-performance.png"/>
+                                          </figure>
+                                        </div>
+                                        <div class="column is-6">
+                                        <p class="heading">Total Revenue</p>
+                                        <p class="title is-4 has-text-weight-bold">17K</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                        <div class="row mt-6">
+                            <nav class="level">
+                                <div class="level-item has-text-centered">
+                                    
+                                    <div class="columns">
+                                        <div class="column is-6 m-0">
+                                        <figure class="image is-64x64">
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/low-price.png"/>                                       </div>
+                                        <div class="column m-0">
+                                        <p class="heading">Total Cost</p>
+                                        <p class="title is-4 has-text-weight-bold">12K</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <div class="columns">
+                                        <div class="column is-6">
+                                        <figure class="image is-64x64">
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/economic-improvement.png"/>
+                                          </figure>
+                                        </div>
+                                        <div class="column">
+                                        <p class="heading">Total Profit</p>
+                                        <p class="title is-4 has-text-weight-bold">5K</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            <!-- card1 -->
+
+            <!-- card2 -->
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <div class="content">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <h1 class="title is-6">Purchase Overview</h1>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <span class="icon">
+                                        <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                
+                                <div class="columns">
+                                    <div class="column is-6 m-0">
+                                    <figure class="image is-64x64">
+                                        <img src="https://img.icons8.com/ultraviolet/100/000000/shopping-bag--v2.png"/>
+                                      </figure>
+                                    </div>
+                                    <div class="column m-0">
+                                    <p class="heading"># of Purchases</p>
+                                    <p class="title is-4 has-text-weight-bold">45</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="level-item has-text-centered">
+                                <div class="columns">
+                                    <div class="column is-6">
+                                    <figure class="image is-64x64">
+                                        <img src="https://img.icons8.com/ultraviolet/100/000000/cancel.png"/>
+                                      </figure>
+                                    </div>
+                                    <div class="column is-6">
+                                    <p class="heading">Canceled Orders</p>
+                                    <p class="title is-4 has-text-weight-bold">04</p>
+                                </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                    <div class="row mt-6">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                
+                                <div class="columns">
+                                    <div class="column is-6 m-0">
+                                    <figure class="image is-64x64">
+                                        <img src="https://img.icons8.com/ultraviolet/100/000000/low-price.png"/>
+                                      </figure>
+                                    </div>
+                                    <div class="column m-0">
+                                    <p class="heading">Total Cost</p>
+                                    <p class="title">786</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="level-item has-text-centered">
+                                <div class="columns">
+                                    <div class="column is-6">
+                                    <figure class="image is-64x64">
+                                        <img src="https://img.icons8.com/ultraviolet/100/000000/return.png"/>
+                                      </figure>
+                                    </div>
+                                    <div class="column">
+                                    <p class="heading">Return Orders</p>
+                                    <p class="title is-4 has-text-weight-bold">07</p>
+                                </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card2 -->
+
+            </div>
+
+            <!-- first-row -->
+
+            <!-- second-row -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div class="content mb-6">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <h1 class="title is-6">Inventory</h1>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-6">
+                                <figure class="image is-64x64 container">
+                                    <img src="https://img.icons8.com/ultraviolet/100/000000/box--v1.png"/>
+                                  </figure>
+                                  <nav class="level">
+                                      <div class="level-item has-text-centered">
+                                          <div>
+                                          <p class="heading">Quantity in Hand</p>
+                                          <p class="title is-4 has-text-weight-bold">214</p>
+                                        </div>
+                                      </div>
+                                  </nav>
+                            </div>
+
+                            <div class="column">
+                                <figure class="image is-64x64 container">
+                                    <img src="https://img.icons8.com/ultraviolet/100/000000/parachute.png"/>                                  </figure>
+                                  <nav class="level">
+                                      <div class="level-item has-text-centered">
+                                          <div>
+                                          <p class="heading">Will be Received</p>
+                                          <p class="title is-4 has-text-weight-bold">44</p>
+                                        </div>
+                                      </div>
+                                  </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <h1 class="title is-6">Product Details</h1>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <a href="#" class="list-item">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <p class="subtitle is-6">Low Stock Items</p>
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            <p class="title is-4 has-text-weight-bold">02</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            
+
+                            <a href="#" class="list-item">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <p class="subtitle is-6">Item Group</p>
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            <p class="title is-4 has-text-weight-bold">14</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            
+
+                            <a href="#" class="list-item">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <p class="subtitle is-6">No of Items</p>
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            <p class="title is-4 has-text-weight-bold">104</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+
+                        <div class="content mb-6">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <h1 class="title is-6">Users</h1>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-6">
+                                <figure class="image is-64x64 container">
+                                    <img src="https://img.icons8.com/ultraviolet/100/000000/box--v1.png"/>
+                                  </figure>
+                                  <nav class="level">
+                                      <div class="level-item has-text-centered">
+                                          <div>
+                                          <p class="heading">Total Users</p>
+                                          <p class="title is-4 has-text-weight-bold">1.8K</p>
+                                        </div>
+                                      </div>
+                                  </nav>
+                            </div>
+
+                            <div class="column">
+                                <figure class="image is-64x64 container">
+                                    <img src="https://img.icons8.com/ultraviolet/100/000000/parachute.png"/>                                  </figure>
+                                  <nav class="level">
+                                      <div class="level-item has-text-centered">
+                                          <div>
+                                          <p class="heading">Active Users</p>
+                                          <p class="title is-4 has-text-weight-bold">914</p>
+                                        </div>
+                                      </div>
+                                  </nav>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- second-row -->
+
+            <!-- third-row -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <canvas id="myChart"></canvas>
+
+                    </div>
+                </div>
+            </div>
+            <!-- third-row -->
+
+            <!-- fourth-row -->
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="image is-32x32">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/user-group-man-man.png"/>
+                                        
+                                        </span>&nbsp;
+                                      <span><h1 class="title is-6">Customers</h1></span>  
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <table class="table is-fullwidth">
+                            <thead>
+                                <tr class="has-background-light">
+                                    <th><abbr title="Serial Number">SN</abbr></th>
+                                    <th><abbr title="Photo">Pic</abbr></th>
+                                    <th><abbr title="Name">Name</abbr></th>
+                                    <th><abbr title="Action">Status</abbr></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/1.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Jim Halper</td>
+                                    <td class="has-background-primary-light has-text-centered has-text-weight-semibold"> Active</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/2.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Miachel Scott</td>
+                                    <td class="has-background-primary-light has-text-centered has-text-weight-semibold">Active</td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/3.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Dwight Schrute</td>
+                                    <td class="has-background-warning-light has-text-centered has-text-weight-semibold">Not Active</td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/4.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Pam Beesly</td>
+                                    <td class="has-background-primary-light has-text-centered has-text-weight-semibold"> Active</td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/5.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Angela Martin</td>
+                                    <td class="has-background-primary-light has-text-centered has-text-weight-semibold"> Active</td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    <td><span class="image is-24x24">
+                                            
+                                        <img src="https://avatars.dicebear.com/api/personas/6.svg"/>
+                                    
+                                    </span></td>
+                                    <td>Ryan Howard</td>
+                                    <td class="has-background-warning-light has-text-centered has-text-weight-semibold"> Not Active</td>
+                                </tr>
+                            </tbody>
+
+                            </table>
+
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="image is-32x32">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/garage-closed.png"/>
+                                        
+                                        </span>&nbsp;
+                                      <span><h1 class="title is-6">Suppliers</h1></span>  
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fas fa-ellipsis-v is-hidden-mobile"></i>
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <table class="table is-fullwidth container">
+                            <thead>
+                                <tr class="has-background-light">
+                                    <th><abbr title="Serial Number">SN</abbr></th>
+                                    <th><abbr title="Company">Company</abbr></th>
+                                    <th><abbr title="Material Value">Material Delivered</abbr></th>
+                                    
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    
+                                    <td>Dunder Mifflin Paper Company</td>
+                                    <td class="has-text-centered">163K</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    
+                                    <td>Athlead</td>
+                                    <td class="has-text-centered">88K</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>3</th>
+                                    
+                                    <td>Sabre</td>
+                                    <td class="has-text-centered">98K</td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    
+                                    <td>Vance Refrigeration</td>
+                                    <td class="has-text-centered">77K</td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    
+                                    <td>Prince Paper Company</td>
+                                    <td class="has-text-centered">55K</td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    
+                                    <td>The Big Red</td>
+                                    <td class="has-text-centered">25K</td>
+                                </tr>
+                            </tbody>
+
+                            </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- fourth-row -->
+
+            <!-- fifth-row -->
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="image is-32x32">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/move-by-trolley.png"/>                                        
+                                        </span>&nbsp;
+                                      <span><h1 class="title is-6">Inventory Items</h1></span>  
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <div class="field is-grouped">
+
+                                            <p class="control has-icons-left">
+                                                <input class="input" type="text" placeholder="Search Inventory">
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-search"></i>
+                                                  </span>
+                                              
+                                            </p>
+                                        <p class="control">
+                                            <button class="button is-success">
+                                                <span>Export</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-file-download"></i> </span>
+
+                                            </button>
+
+                                        </p>
+                                        
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <table class="table is-fullwidth">
+                            <thead>
+                                <tr class="has-background-light">
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <th><abbr title="Item Code">Item Code</abbr></th>
+                                    <th><abbr title="Photo">Photo</abbr></th>
+                                    <th><abbr title="Item Name">Item Name</abbr></th>
+                                    <th><abbr title="Item Name">Item Group</abbr></th>
+                                    <th><abbr title="Last Purchase">Last Purchase</abbr></th>
+                                    <th><abbr title="On Hand">On Hand</abbr></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01456
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/broccoli.png"/>
+                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Brocoli</td>
+                                    <td>Vegetable</td>
+                                    <td>03 May 2021</td>
+                                    <td>10 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td>
+                                        V01457
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/eggplant.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Aubergini</td>
+                                    <td>Vegetable</td>
+                                    <td>04 May 2021</td>
+                                    <td>8 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01458
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/carrot.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Carrot</td>
+                                    <td>Vegetable</td>
+                                    <td>04 May 2021</td>
+                                    <td>12 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01459
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/chili-pepper.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Chili Pepper</td>
+                                    <td>Vegetable</td>
+                                    <td>04 May 2021</td>
+                                    <td>4.5 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01460
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/citrus.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Lemon</td>
+                                    <td>Vegetable</td>
+                                    <td>03 May 2021</td>
+                                    <td>1 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01461
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/steak-rare.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Chicken</td>
+                                    <td>Meat</td>
+                                    <td>02 May 2021</td>
+                                    <td>56 P</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01462
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/rack-of-lamb.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Lamb</td>
+                                    <td>Meat</td>
+                                    <td>03 May 2021</td>
+                                    <td>4 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01463
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/40/000000/steak.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Beef</td>
+                                    <td>Vegetable</td>
+                                    <td>02 May 2021</td>
+                                    <td>43 Kg</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                          </label>
+                                    </th>
+                                    <td class="">
+                                        V01464
+                                    </td>
+                                    <td>
+                                        <span class="image is-24x24">
+                                            
+                                            <img src="https://img.icons8.com/ultraviolet/100/000000/steak.png"/>                                        
+                                        </span>
+                                    </td>
+
+                                    <td>Steak</td>
+                                    <td>Meat</td>
+                                    <td>06 May 2021</td>
+                                    <td>23 Kg</td>
+                                </tr>
+                                
+                            </tbody>
+
+                            </table>
+
+                            <nav class="pagination is-small" role="navigation" aria-label="pagination">
+                                <ul class="pagination-list">
+                                    <li>
+                                      <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                                    </li>
+                                    <li>
+                                      <a class="pagination-link" aria-label="Goto page 2">2</a>
+                                    </li>
+                                    <li>
+                                      <a class="pagination-link" aria-label="Goto page 3">3</a>
+                                    </li>
+                                    <li>
+                                      <a class="pagination-link" aria-label="Goto page 4">4</a>
+                                    </li>
+                                    <li>
+                                      <a class="pagination-link" aria-label="Goto page 5">5</a>
+                                    </li>
+                                  </ul>
+                                <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
+                                <a class="pagination-next">Next page</a>
+                                
+                              </nav>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- fifth-row -->
+        
+        </div>
+
+
+
+
+
+
+        <!-- dashboard -->
+
+    </div>
+
+
+    <!-- mainbody -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
